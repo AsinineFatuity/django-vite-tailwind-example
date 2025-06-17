@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_vite',
 ]
 
 MIDDLEWARE = [
@@ -119,7 +120,14 @@ STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR.parent, "static")
 STATICFILES_DIRS = [
  os.path.join(BASE_DIR, "static"),
+ os.path.join(BASE_DIR, "assets"),
 ]
+DJANGO_VITE = {
+  "default": {
+    "dev_mode": DEBUG,
+    "manifest_path": os.path.join(BASE_DIR, "assets", "manifest.json"),
+  }
+}
 #Allow Session Auth For React SPA
 CSRF_COOKIE_SAMESITE = "Lax"
 SESSION_COOKIE_SAMESITE = "Lax"

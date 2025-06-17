@@ -1,0 +1,11 @@
+{
+  "frontend/index.tsx": {
+    "file": "assets/mainAssets-DZvT8_r0.js",
+    "name": "mainAssets",
+    "src": "frontend/index.tsx",
+    "isEntry": true,
+    "css": [
+      "assets/mainAssets-DjY9jjZY.css"
+    ]
+  }
+}
