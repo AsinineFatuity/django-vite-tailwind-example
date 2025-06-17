@@ -24,7 +24,7 @@ const Home = () => {
   return (
     
     <Container className="d-flex flex-column justify-content-center align-items-center vh-100 text-center">
-      <h1 className="mb-4">My Bootstrapped Hybrid Django-React Project</h1>
+      <h1 className="mb-4">My Bootstrapped Hybrid Django-React-Vite Project</h1>
       <Button variant="primary" size="lg" onClick={load}>
         Test Loader
       </Button>

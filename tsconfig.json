@@ -14,5 +14,8 @@
     "resolveJsonModule": true,
     "lib": ["dom", "esnext"]
   },
-  "include": ["frontend/**/*"]
+  "include": ["frontend/**/*"],
+  "exclude": [
+    "./node_modules",
+  ]
 }
