@@ -119,12 +119,11 @@ STATIC_URL = 'static/'
 #static files section
 STATIC_ROOT = os.path.join(BASE_DIR.parent, "static")
 STATICFILES_DIRS = [
- os.path.join(BASE_DIR, "static"),
  os.path.join(BASE_DIR, "assets"),
 ]
 DJANGO_VITE = {
   "default": {
-    "dev_mode": DEBUG,
+    "dev_mode": True,
     "manifest_path": os.path.join(BASE_DIR, "assets", "manifest.json"),
   }
 }
