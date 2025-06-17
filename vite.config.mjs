@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite'
+import tailwindcss from '@tailwindcss/vite'
 import path from 'path'
 import dotenv from 'dotenv'
 
@@ -7,6 +8,9 @@ dotenv.config({ path: './frontend/environments/.env.development' })
 
 export default defineConfig({
   base: '/static/',
+  plugins: [
+    tailwindcss()
+  ],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),

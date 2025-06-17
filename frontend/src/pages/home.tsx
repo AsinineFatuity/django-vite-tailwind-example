@@ -1,6 +1,5 @@
 
 import React, { useEffect } from "react";
-import { Container, Button } from "react-bootstrap";
 import { showCustomFeedbackToast, showLoadingIndicator } from "../redux/actions";
 import { useAppDispatch } from "../hooks";
 const Home = () => {
@@ -23,12 +22,12 @@ const Home = () => {
   };
   return (
     
-    <Container className="d-flex flex-column justify-content-center align-items-center vh-100 text-center">
-      <h1 className="mb-4">My Bootstrapped Hybrid Django-React-Vite Project</h1>
-      <Button variant="primary" size="lg" onClick={load}>
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+      <h1 className="mb-4 font-semibold font-stretch-expanded">My Tailwind Hybrid Django-React-Vite Project</h1>
+      <button className="bg-blue-500 text-white font-semibold py-3 px-6 rounded-full border-2 border-blue-300 " onClick={load}>
         Test Loader
-      </Button>
-    </Container>
+      </button>
+    </div>
   );
 };
 

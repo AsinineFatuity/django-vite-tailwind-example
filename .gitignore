@@ -139,15 +139,6 @@ coverage
 #Javascript stuff
 node_modules/
 dist/ 
-# Ignore hot-update files and build output
-static/hot/
-static/index-bundle.js
-static/index-bundle.js.map
-static/main.css 
-static/main.css.map
-static/index.html
-static/index-bundle.js.LICENSE.txt
-static/output.css
 # Ignore the frontend environments
 frontend/environments/.env.development
 frontend/environments/.env.production
